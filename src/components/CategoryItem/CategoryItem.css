@@ -1,0 +1,20 @@
+.category_item {
+    padding: 30px;
+    background: rgba(126, 144, 254, 0.05);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.category_item span {
+    width: 70px;
+    height: 70px;
+    background: rgba(126, 144, 254, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.category_item img {
+    width: 40px;
+    height: 40px;
+}

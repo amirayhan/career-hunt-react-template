@@ -1,0 +1,15 @@
+/* banner css start */
+#banner {
+    padding-top: 200px;
+    background: url("../../assets/banner_bg.jpg") no-repeat center/cover;
+}
+#banner .banner_content {
+    padding-top: 130px;
+}
+#banner .banner_content p {
+    font-size: 18px;
+}
+#banner .banner_image img {
+    width: 100%;
+}
+/* banner css end */

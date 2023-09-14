@@ -1,0 +1,40 @@
+/* .navbar {
+    padding: 45px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+.navbar .navbar-brand {
+    color: #1a1919;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.navbar .navbar-nav .nav-item {
+    padding: 0 12px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    color: var(--Dark-03, #757575);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.navbar .button1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 19px 28px;
+    display: inline-flex;
+    align-items: flex-start;
+    border-radius: 8px;
+    gap: 10px;
+    background: var(linear-gradient(90deg, #7e90fe 0%, #9873ff 100%));
+    transition: all linear 0.3s;
+}
+.navbar .button1:hover {
+    background: #1a1919;
+}
