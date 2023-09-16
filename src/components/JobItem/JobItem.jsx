@@ -3,8 +3,8 @@ import "./JobItem.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faDollarSign } from "@fortawesome/free-solid-svg-icons";
 
-const JobItem = ({ jobItem }) => {
-    const { logo_img, title, company, job_type, salary, location } = jobItem;
+const JobItem = ({ jobItem, handleViewDetails }) => {
+    const { id, logo_img, title, company, job_type, salary, location } = jobItem;
     return (
         <div className="col-lg-6">
             <div className="job_item">
@@ -28,7 +28,9 @@ const JobItem = ({ jobItem }) => {
                         {salary}
                     </li>
                 </ul>
-                <button className="button1">View Details</button>
+                <button onClick={() => handleViewDetails(id)} className="button1">
+                    View Details
+                </button>
             </div>
         </div>
     );

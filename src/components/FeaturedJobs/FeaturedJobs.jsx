@@ -7,6 +7,7 @@ import "./FeaturedJobs.css";
 const FeaturedJobs = () => {
     const [featuredJobs, setFeaturedJobs] = useState([]);
     const [showAll, setOpenAll] = useState(false);
+    const [jobDetails, setJobDetails] = useState([]);
 
     useEffect(() => {
         fetch("featuredJobs.json")
@@ -16,6 +17,12 @@ const FeaturedJobs = () => {
 
     const handleToggleClick = () => {
         setOpenAll(!showAll);
+    };
+
+    const handleViewDetails = (id) => {
+        console.log(id);
+        const findedJobs = featuredJobs.find((jobs) => jobs.id === id);
+        setJobDetails(findedJobs);
     };
     return (
         <div id="featured_jobs">
@@ -27,7 +34,7 @@ const FeaturedJobs = () => {
                 <div className="jobs">
                     <div className="row">
                         {featuredJobs.slice(0, showAll ? featuredJobs.length : 4).map((jobItem) => (
-                            <JobItem key={jobItem.id} jobItem={jobItem}></JobItem>
+                            <JobItem key={jobItem.id} jobItem={jobItem} handleViewDetails={handleViewDetails}></JobItem>
                         ))}
                     </div>
                     <div className="d-flex justify-content-center">
