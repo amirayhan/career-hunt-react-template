@@ -1,0 +1,27 @@
+.job_item {
+    background: #fff;
+    padding: 35px;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.job_item .image {
+    width: 250px;
+    height: 100px;
+}
+.job_item h3 {
+    color: #474747;
+}
+.job_item h6 {
+    color: #757575;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.job_item ul {
+    padding: 15px 0;
+    gap: 35px;
+}
+.job_item ul li span {
+    padding-right: 3px;
+    color: #7e90fe;
+}

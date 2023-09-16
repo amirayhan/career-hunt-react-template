@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "logo_img": "company1_logo.png",
+        "logo_img": "../src/assets/job_post_image/image-1.png",
         "title": "Web Developer",
         "company": "TechWeb Solutions",
         "job_type": "Full-Time",
@@ -16,11 +16,11 @@
     },
     {
         "id": 2,
-        "logo_img": "company2_logo.png",
+        "logo_img": "../src/assets/job_post_image/image-2.png",
         "title": "Data Analyst",
         "company": "Data Insights Inc.",
         "job_type": "Part-Time",
-        "salary": "$50,000 - $65,000 per year (Pro-rated)",
+        "salary": "$50,000 - $65,000 per year",
         "job_description": "Join our team as a Data Analyst and help us turn data into actionable insights.",
         "job_responsibility": ["Collect, clean, and analyze data from various sources.", "Create reports and dashboards to present insights to stakeholders.", "Assist in data-driven decision-making processes."],
         "educational_requirements": "Bachelor's degree in Statistics or a related field.",
@@ -31,7 +31,7 @@
     },
     {
         "id": 3,
-        "logo_img": "company3_logo.png",
+        "logo_img": "../src/assets/job_post_image/image-3.png",
         "title": "Marketing Manager",
         "company": "Growth Marketing Agency",
         "job_type": "Full-Time",
@@ -46,7 +46,7 @@
     },
     {
         "id": 4,
-        "logo_img": "company4_logo.png",
+        "logo_img": "../src/assets/job_post_image/image-4.png",
         "title": "Software Engineer Intern",
         "company": "CodeCrafters Inc.",
         "job_type": "Internship",
@@ -61,7 +61,7 @@
     },
     {
         "id": 5,
-        "logo_img": "company5_logo.png",
+        "logo_img": "../src/assets/job_post_image/image-5.png",
         "title": "Financial Analyst",
         "company": "FinanceMasters LLC",
         "job_type": "Full-Time",
@@ -76,7 +76,7 @@
     },
     {
         "id": 6,
-        "logo_img": "company6_logo.png",
+        "logo_img": "../src/assets/job_post_image/image-6.png",
         "title": "Graphic Designer",
         "company": "DesignCreatives Co.",
         "job_type": "Full-Time",
@@ -91,7 +91,7 @@
     },
     {
         "id": 7,
-        "logo_img": "company7_logo.png",
+        "logo_img": "../src/assets/job_post_image/image-7.png",
         "title": "Customer Support Specialist",
         "company": "SupportHeroes Inc.",
         "job_type": "Full-Time",
@@ -106,7 +106,7 @@
     },
     {
         "id": 8,
-        "logo_img": "company8_logo.png",
+        "logo_img": "../src/assets/job_post_image/image-8.png",
         "title": "HR Manager",
         "company": "HRPro Solutions",
         "job_type": "Full-Time",
@@ -121,11 +121,11 @@
     },
     {
         "id": 9,
-        "logo_img": "company9_logo.png",
+        "logo_img": "../src/assets/job_post_image/image-9.png",
         "title": "Sales Representative",
         "company": "SalesBoosters Ltd.",
         "job_type": "Full-Time",
-        "salary": "$45,000 - $60,000 per year (plus commissions)",
+        "salary": "$45,000 - $60,000 per year",
         "job_description": "Join our sales team and help drive revenue growth through client acquisition.",
         "job_responsibility": ["Prospect and contact potential customers.", "Present and sell company products and services to clients.", "Meet and exceed sales targets."],
         "educational_requirements": "High school diploma or equivalent; Bachelor's degree preferred.",
@@ -136,7 +136,7 @@
     },
     {
         "id": 10,
-        "logo_img": "company10_logo.png",
+        "logo_img": "../src/assets/job_post_image/image-10.png",
         "title": "Research Scientist",
         "company": "ScienceInnovate Labs",
         "job_type": "Full-Time",

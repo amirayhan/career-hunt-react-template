@@ -1,7 +1,22 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import JobItem from "../JobItem/JobItem";
 import "./FeaturedJobs.css";
 
 const FeaturedJobs = () => {
+    const [featuredJobs, setFeaturedJobs] = useState([]);
+    const [showAll, setOpenAll] = useState(false);
+
+    useEffect(() => {
+        fetch("featuredJobs.json")
+            .then((res) => res.json())
+            .then((data) => setFeaturedJobs(data));
+    }, []);
+
+    const handleToggleClick = () => {
+        setOpenAll(!showAll);
+    };
     return (
         <div id="featured_jobs">
             <div className="container">
@@ -11,12 +26,14 @@ const FeaturedJobs = () => {
                 </div>
                 <div className="jobs">
                     <div className="row">
-                        <div className="col-lg-6">
-                            <h3>job item</h3>
-                        </div>
-                        <div className="col-lg-6">
-                            <h3>job item</h3>
-                        </div>
+                        {featuredJobs.slice(0, showAll ? featuredJobs.length : 4).map((jobItem) => (
+                            <JobItem key={jobItem.id} jobItem={jobItem}></JobItem>
+                        ))}
+                    </div>
+                    <div className="d-flex justify-content-center">
+                        <button onClick={handleToggleClick} className="button2 inline-block m-auto">
+                            {showAll ? "Show Less" : "Show More"}
+                        </button>
                     </div>
                 </div>
             </div>
