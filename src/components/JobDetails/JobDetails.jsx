@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { addToDb, getShoppingCart } from "../../utilities/fakedb";
 import "./JobDetails.css";
 
 const JobDetails = () => {
@@ -81,7 +82,9 @@ const JobDetails = () => {
                                         </li>
                                     </ul>
                                 </div>
-                                <button className="button1">Apply Now</button>
+                                <button onClick={() => handleApplyNow(jobDetails)} className="button1">
+                                    Apply Now
+                                </button>
                             </div>
                         </div>
                     </div>
