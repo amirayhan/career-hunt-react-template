@@ -1,9 +1,10 @@
-import React from "react";
-import "./JobItem.css";
+import { faDollarSign, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot, faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+import { Link } from "react-router-dom";
+import "./JobItem.css";
 
-const JobItem = ({ jobItem, handleViewDetails }) => {
+const JobItem = ({ jobItem }) => {
     const { id, logo_img, title, company, job_type, salary, location } = jobItem;
     return (
         <div className="col-lg-6">
@@ -28,9 +29,9 @@ const JobItem = ({ jobItem, handleViewDetails }) => {
                         {salary}
                     </li>
                 </ul>
-                <button onClick={() => handleViewDetails(id)} className="button1">
+                <Link to={`/job/${id}`} className="button1">
                     View Details
-                </button>
+                </Link>
             </div>
         </div>
     );
