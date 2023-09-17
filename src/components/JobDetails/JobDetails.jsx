@@ -7,7 +7,7 @@ const JobDetails = () => {
     const allJobs = useLoaderData(); // Ensure this contains your job data
     const { id } = useParams();
     const [jobDetails, setJobDetails] = useState({});
-
+    const [isApplied, setIsApplied] = useState(false);
     useEffect(() => {
         const jobId = parseInt(id, 10);
 
@@ -18,6 +18,21 @@ const JobDetails = () => {
             setJobDetails(foundJob);
         }
     }, [id, allJobs]);
+
+    const handleApplyNow = () => {
+        const shoppingCart = getShoppingCart();
+
+        // Check if the jobDetails.id already exists in the cart object
+        if (shoppingCart.hasOwnProperty(jobDetails.id)) {
+            alert("Already Applied");
+        } else {
+            // Add the job ID to the cart
+            addToDb(jobDetails.id);
+
+            // Update the state to indicate that the job has been applied for
+            setIsApplied(true);
+        }
+    };
 
     return (
         <>
@@ -82,8 +97,8 @@ const JobDetails = () => {
                                         </li>
                                     </ul>
                                 </div>
-                                <button onClick={() => handleApplyNow(jobDetails)} className="button1">
-                                    Apply Now
+                                <button onClick={handleApplyNow} className="button1" disabled={isApplied}>
+                                    {isApplied ? "Applied" : "Apply Now"}
                                 </button>
                             </div>
                         </div>
