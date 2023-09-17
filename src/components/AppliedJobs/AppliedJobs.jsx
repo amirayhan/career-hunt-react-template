@@ -7,6 +7,7 @@ import "./AppliedJobs.css";
 const AppliedJobs = () => {
     const allJobs = useLoaderData();
     const [appliedJobs, setAppliedJobs] = useState([]);
+    const [selectedOption, setSelectedOption] = useState("allJobs");
 
     useEffect(() => {
         const storedCart = getShoppingCart();
@@ -17,6 +18,14 @@ const AppliedJobs = () => {
         setAppliedJobs(appliedJobsDetails);
     }, [allJobs]);
 
+    // Function to handle the change of the select option
+    const handleSelectChange = (event) => {
+        setSelectedOption(event.target.value);
+    };
+
+    // Function to filter appliedJobs based on the selected option
+    const filteredAppliedJobs = selectedOption === "allJobs" ? appliedJobs : appliedJobs.filter((job) => job.job_type === selectedOption);
+
     return (
         <>
             <div className="job_details_banner mb-5">
@@ -25,13 +34,14 @@ const AppliedJobs = () => {
             <div className="applied_jobs pt-5">
                 <div className="container">
                     <form>
-                        <select>
+                        <select onChange={handleSelectChange} value={selectedOption}>
                             <option value="allJobs">All Jobs</option>
-                            <option value="allJobs">Part Time</option>
-                            <option value="allJobs">Full Time</option>
+                            <option value="Part-Time">Part Time</option>
+                            <option value="Full-Time">Full Time</option>
+                            <option value="Internship">Internship</option>
                         </select>
                     </form>
-                    {appliedJobs.map((job) => (
+                    {filteredAppliedJobs.map((job) => (
                         <AppliedItem key={job.id} job={job}></AppliedItem>
                     ))}
                 </div>

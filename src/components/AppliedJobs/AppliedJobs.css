@@ -1,0 +1,11 @@
+.applied_jobs form {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 30px;
+}
+.applied_jobs form select {
+    padding: 10px 15px;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    font-size: 18px;
+}
