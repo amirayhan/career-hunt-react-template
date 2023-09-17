@@ -1,0 +1,11 @@
+.job_item .job_item_details .logo_image {
+    width: 300px;
+    padding: 30px;
+    background: #ececec;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.job_item .job_item_details .job_content button {
+    margin: 15px;
+}
