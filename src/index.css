@@ -98,6 +98,11 @@ img {
     text-align: center;
     padding-bottom: 50px;
 }
+.others_banner {
+    padding-top: 250px;
+    padding-bottom: 150px;
+    background: url(./assets/job_details_banner.jpg) no-repeat center/cover;
+}
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

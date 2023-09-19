@@ -31,11 +31,12 @@ const router = createBrowserRouter([
             {
                 path: "blog",
                 element: <Blog></Blog>,
+                loader: () => fetch("../public/featuredJobs.json"),
             },
             {
                 path: "/job/:id",
                 element: <JobDetails />,
-                loader: () => fetch("../public/featuredJobs.json"), // Corrected "fecth" to "fetch"
+                loader: () => fetch("../public/featuredJobs.json"),
             },
         ],
     },

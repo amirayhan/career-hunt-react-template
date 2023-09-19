@@ -15,12 +15,6 @@ const FeaturedJobs = () => {
     const handleToggleClick = () => {
         setOpenAll(!showAll);
     };
-
-    // const handleViewDetails = (id) => {
-    //     console.log(id);
-    //     const findedJobs = featuredJobs.find((jobs) => jobs.id === id);
-    //     setJobDetails(findedJobs);
-    // };
     return (
         <div id="featured_jobs">
             <div className="container">

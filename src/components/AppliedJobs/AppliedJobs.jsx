@@ -28,7 +28,7 @@ const AppliedJobs = () => {
 
     return (
         <>
-            <div className="job_details_banner mb-5">
+            <div className="others_banner mb-5">
                 <h2 className="text-center">Applied Jobs</h2>
             </div>
             <div className="applied_jobs pt-5">

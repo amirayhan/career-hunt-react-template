@@ -1,0 +1,19 @@
+.back_to_top {
+    width: 70px;
+    height: 70px;
+    background: #7e90fe;
+    border: none;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: -80px;
+    transition: all linear 0.3s;
+}
+.back_to_top:hover {
+    background: #222;
+}
+.back_to_top.active_fixed {
+    right: 50px;
+}
