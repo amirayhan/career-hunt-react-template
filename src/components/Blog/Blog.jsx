@@ -1,7 +1,12 @@
 import React from "react";
+import { useLoaderData } from "react-router-dom";
+import BlogItem from "../BlogItem/BlogItem";
+import Sidebar from "../Sidebar/Sidebar";
 import "./Blog.css";
 
 const Blog = () => {
+    const allPost = useLoaderData();
+
     return (
         <>
             <div className="others_banner mb-5">
@@ -12,13 +17,15 @@ const Blog = () => {
                     <div className="row">
                         <div className="col-lg-9">
                             <div className="blog_content">
-                                <h2>blog Content</h2>
+                                <div className="row">
+                                    {allPost.map((post) => (
+                                        <BlogItem key={post.id} post={post}></BlogItem>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                         <div className="col-lg-3">
-                            <div className="sidebar">
-                                <h2>Sidebar</h2>
-                            </div>
+                            <Sidebar></Sidebar>
                         </div>
                     </div>
                 </div>

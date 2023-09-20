@@ -1,0 +1,28 @@
+.blog_item {
+    background: #fff;
+    margin-bottom: 30px;
+}
+.blog_item .image {
+    overflow: hidden;
+}
+.blog_item .image img {
+    transition: all linear 0.4s;
+}
+.blog_item .content {
+    padding: 0 20px 20px 20px;
+}
+.blog_item ul {
+    padding: 10px 0;
+}
+.blog_item ul li {
+    font-size: 14px;
+    color: rgb(184, 184, 184);
+}
+.blog_item h3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.blog_item:hover .image img {
+    scale: 1.05;
+}

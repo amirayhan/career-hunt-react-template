@@ -19,6 +19,12 @@ const JobDetails = () => {
         }
     }, [id, allJobs]);
 
+    useEffect(() => {
+        // Check if the job is already applied based on local storage
+        const shoppingCart = getShoppingCart();
+        setIsApplied(shoppingCart.hasOwnProperty(jobDetails.id));
+    }, [jobDetails.id]);
+
     const handleApplyNow = () => {
         const shoppingCart = getShoppingCart();
 

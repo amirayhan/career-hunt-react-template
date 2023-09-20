@@ -1,102 +1,92 @@
 [
     {
         "id": 1,
-        "img": "html_image.jpg",
+        "img": "../src/assets/blog_image/image-01.jpg",
         "title": "The Basics of HTML: A Beginner's Guide",
-        "post_description": "Learn the fundamentals of HTML, including tags, elements, and document structure. This beginner-friendly guide will help you get started with creating web pages using HTML.",
+        "post_description": "Harness the power of HTML5 multimedia elements to create engaging web experiences. Add audio, video, and interactive content to your websites.",
         "author": "John Doe",
         "post_category": "html",
-        "time_and_date": "3 hours ago",
-        "time_stamp": "2023-09-14T10:00:00Z"
+        "time_and_date": "3 hours ago"
     },
     {
         "id": 2,
-        "img": "react_image.jpg",
+        "img": "../src/assets/blog_image/image-02.jpg",
         "title": "Getting Started with React: Building Your First Component",
         "post_description": "Discover how to create your first React component and kickstart your web development journey. This step-by-step tutorial is perfect for beginners.",
         "author": "Jane Smith",
         "post_category": "react",
-        "time_and_date": "1 day ago",
-        "time_stamp": "2023-09-13T14:30:00Z"
+        "time_and_date": "1 day ago"
     },
     {
         "id": 3,
-        "img": "javascript_image.jpg",
+        "img": "../src/assets/blog_image/image-03.jpg",
         "title": "JavaScript ES6: A Deep Dive into Modern JavaScript",
         "post_description": "Explore the new features and syntax enhancements of JavaScript ES6 for modern web development. Master the latest advancements in JavaScript programming.",
         "author": "David Wilson",
         "post_category": "javascript",
-        "time_and_date": "2 days ago",
-        "time_stamp": "2023-09-12T12:15:00Z"
+        "time_and_date": "2 days ago"
     },
     {
         "id": 4,
-        "img": "html_image.jpg",
+        "img": "../src/assets/blog_image/image-04.jpg",
         "title": "Advanced HTML Techniques: Building Responsive Web Pages",
         "post_description": "Learn advanced HTML techniques to create responsive and mobile-friendly web pages. Enhance your web development skills with practical tips and examples.",
         "author": "Emma Johnson",
         "post_category": "html",
-        "time_and_date": "1 week ago",
-        "time_stamp": "2023-09-07T16:45:00Z"
+        "time_and_date": "1 week ago"
     },
     {
         "id": 5,
-        "img": "react_image.jpg",
+        "img": "../src/assets/blog_image/image-05.jpg",
         "title": "State Management in React: A Comprehensive Guide",
         "post_description": "Master state management in React using tools like Redux and Context API. Handle complex application states with ease.",
         "author": "Michael Brown",
         "post_category": "react",
-        "time_and_date": "2 weeks ago",
-        "time_stamp": "2023-09-01T09:30:00Z"
+        "time_and_date": "2 weeks ago"
     },
     {
         "id": 6,
-        "img": "javascript_image.jpg",
+        "img": "../src/assets/blog_image/image-06.jpg",
         "title": "Asynchronous JavaScript: Handling Promises and Async/Await",
         "post_description": "Delve into asynchronous JavaScript and learn to work with Promises and Async/Await. Ensure smooth and responsive web applications.",
         "author": "Sarah Lee",
         "post_category": "javascript",
-        "time_and_date": "3 weeks ago",
-        "time_stamp": "2023-08-25T17:20:00Z"
+        "time_and_date": "3 weeks ago"
     },
     {
         "id": 7,
-        "img": "html_image.jpg",
+        "img": "../src/assets/blog_image/image-07.jpg",
         "title": "HTML Forms and Form Validation: Best Practices",
         "post_description": "Discover best practices for creating HTML forms and implementing form validation. Ensure data integrity and user-friendly experiences.",
         "author": "Kevin Miller",
         "post_category": "html",
-        "time_and_date": "1 month ago",
-        "time_stamp": "2023-08-15T11:55:00Z"
+        "time_and_date": "1 month ago"
     },
     {
         "id": 8,
-        "img": "react_image.jpg",
+        "img": "../src/assets/blog_image/image-08.jpg",
         "title": "React Router: Navigating Single-Page Applications",
         "post_description": "Learn how to implement client-side routing in React applications using React Router. Create seamless and dynamic user experiences.",
         "author": "Linda Davis",
         "post_category": "react",
-        "time_and_date": "1 month ago",
-        "time_stamp": "2023-08-10T14:10:00Z"
+        "time_and_date": "1 month ago"
     },
     {
         "id": 9,
-        "img": "javascript_image.jpg",
+        "img": "../src/assets/blog_image/image-09.jpg",
         "title": "JavaScript Design Patterns: Building Scalable Applications",
         "post_description": "Explore common JavaScript design patterns to create scalable and maintainable applications. Architect robust and efficient code.",
         "author": "Tom Wilson",
         "post_category": "javascript",
-        "time_and_date": "2 months ago",
-        "time_stamp": "2023-07-20T10:45:00Z"
+        "time_and_date": "2 months ago"
     },
     {
         "id": 10,
-        "img": "html_image.jpg",
+        "img": "../src/assets/blog_image/image-10.jpg",
         "title": "HTML5 Multimedia Elements: Enhancing Web Experiences",
         "post_description": "Harness the power of HTML5 multimedia elements to create engaging web experiences. Add audio, video, and interactive content to your websites.",
         "author": "Emily Roberts",
         "post_category": "html",
-        "time_and_date": "2 months ago",
-        "time_stamp": "2023-07-15T16:25:00Z"
+        "time_and_date": "2 months ago"
     }
 ]
