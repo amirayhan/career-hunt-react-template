@@ -8,20 +8,6 @@
     z-index: 1000;
 }
 
-.navbar.fixed {
-    background: rgba(34, 34, 34, 0.95);
-    top: 0;
-    width: 100%;
-}
-.navbar.fixed .navbar-brand {
-    color: #fff;
-}
-.navbar.fixed .nav-link {
-    color: #fff;
-}
-.navbar.fixed .nav-link.active {
-    color: #7e90fe;
-}
 .navbar .navbar-brand {
     color: #1a1919;
     font-family: Manrope;
@@ -59,4 +45,19 @@
 }
 .navbar .button1:hover {
     background: #1a1919;
+}
+
+.navbar.fixed {
+    background: rgba(34, 34, 34, 0.95);
+    top: 0;
+    width: 100%;
+}
+.navbar.fixed .navbar-brand {
+    color: #fff;
+}
+.navbar.fixed .nav-link {
+    color: #fff;
+}
+.navbar.fixed .nav-link.active {
+    color: #7e90fe !important;
 }

@@ -3,3 +3,13 @@
     padding-bottom: 120px;
     background: #1a1919;
 }
+#footer .footer_items {
+    margin-bottom: 30px;
+}
+#footer .footer_items h3,
+#footer .footer_items h4 {
+    color: #7e90fe;
+}
+#footer .footer_items ul li a {
+    color: #cfcfcf;
+}

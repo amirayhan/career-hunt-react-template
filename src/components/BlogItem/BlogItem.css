@@ -4,6 +4,7 @@
 }
 .blog_item .image {
     overflow: hidden;
+    position: relative;
 }
 .blog_item .image img {
     transition: all linear 0.4s;
@@ -25,4 +26,11 @@
 }
 .blog_item:hover .image img {
     scale: 1.05;
+}
+.blog_item .image span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.66);
+    color: #000;
 }

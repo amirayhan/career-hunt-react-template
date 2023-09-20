@@ -26,27 +26,29 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="m-auto">
                         <li className="nav-item">
-                            <Link to="/" className="nav-link" exact activeClassName="active">
+                            <Link to="/" className="nav-link">
                                 Home
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/statistics" className="nav-link" activeClassName="active">
+                            <Link to="/statistics" className="nav-link">
                                 Statistics
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/appliedjobs" className="nav-link" activeClassName="active">
+                            <Link to="/appliedjobs" className="nav-link">
                                 Applied Jobs
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/blog" className="nav-link" activeClassName="active">
+                            <Link to="/blog" className="nav-link">
                                 Blog
                             </Link>
                         </li>
                     </Nav>
-                    <button className="button1">Start Applying</button>
+                    <a href="#featured_jobs" className="button1">
+                        Start Applying
+                    </a>
                 </Navbar.Collapse>
             </Container>
         </div>

@@ -1,8 +1,8 @@
-import React from "react";
-import "./Footer.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 import { Link } from "react-router-dom";
+import "./Footer.css";
 
 const Footer = () => {
     return (
@@ -28,7 +28,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-2">
+                    <div className="col-sm-6 col-lg-2">
                         <div className="footer_items">
                             <h4>Company</h4>
                             <ul>
@@ -47,7 +47,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-2">
+                    <div className="col-sm-6 col-lg-2">
                         <div className="footer_items">
                             <h4>Product</h4>
                             <ul>
@@ -66,7 +66,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-2">
+                    <div className="col-sm-6 col-lg-2">
                         <div className="footer_items">
                             <h4>Support</h4>
                             <ul>
@@ -85,7 +85,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-2">
+                    <div className="col-sm-6 col-lg-2">
                         <div className="footer_items">
                             <h4>Contact</h4>
                             <ul>

@@ -17,7 +17,7 @@ const Banner = () => {
                             <button className="button1">Get Started</button>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="d-none d-sm-none d-md-none col-lg-6 ">
                         <div className="banner_image">
                             <img src={heroImage} alt="Hero image" />
                         </div>

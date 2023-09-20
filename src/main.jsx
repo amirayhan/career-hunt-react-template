@@ -7,6 +7,8 @@ import Blog from "./components/Blog/Blog";
 import Home from "./components/Home/Home";
 import JobDetails from "./components/JobDetails/JobDetails";
 import Main from "./components/Layout/Main";
+import PostDetails from "./components/PostDetails/PostDetails";
+import Sidebar from "./components/Sidebar/Sidebar";
 import Statistics from "./components/Statistics/Statistics";
 import "./index.css";
 
@@ -37,6 +39,16 @@ const router = createBrowserRouter([
                 path: "/job/:id",
                 element: <JobDetails />,
                 loader: () => fetch("../public/featuredJobs.json"),
+            },
+            {
+                path: "/post/:id",
+                element: <PostDetails></PostDetails>,
+                loader: () => fetch("../public/blog.json"),
+            },
+            {
+                path: "sidebar",
+                element: <Sidebar></Sidebar>,
+                loader: () => fetch("../public/blog.json"),
             },
         ],
     },

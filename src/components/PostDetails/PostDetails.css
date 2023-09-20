@@ -1,0 +1,13 @@
+.post_details {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.post_details .blog_content ul {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 7px 0;
+    margin-bottom: 15px;
+}
+.post_details .blog_content ul li {
+    color: #c6c6c6;
+    font-size: 14px;
+}
