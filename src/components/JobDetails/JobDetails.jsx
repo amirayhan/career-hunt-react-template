@@ -17,6 +17,7 @@ const JobDetails = () => {
         if (foundJob) {
             setJobDetails(foundJob);
         }
+        window.scrollTo(0, 0);
     }, [id, allJobs]);
 
     useEffect(() => {
@@ -42,7 +43,7 @@ const JobDetails = () => {
 
     return (
         <>
-            <div className="job_details_banner">
+            <div className="others_banner">
                 <h2 className="text-center">Job Details</h2>
             </div>
             <div className="job_details">

@@ -1,6 +1,6 @@
 #footer {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 10px;
     background: #1a1919;
 }
 #footer .footer_items {
@@ -10,6 +10,25 @@
 #footer .footer_items h4 {
     color: #7e90fe;
 }
-#footer .footer_items ul li a {
-    color: #cfcfcf;
+#footer .footer_items ul.footer_list li {
+    padding: 10px 0;
+}
+#footer .footer_items ul.footer_list li a {
+    color: #fff;
+    transition: all linear 0.2s;
+}
+#footer .footer_items ul.footer_list li a:hover {
+    color: #7e90fe;
+}
+#footer .footer_items ul.social_media_list {
+    display: flex;
+    gap: 25px;
+}
+#footer .footer_items ul.social_media_list li a svg {
+    fill: #fff;
+    font-size: 25px;
+    transition: all linear 0.2s;
+}
+#footer .footer_items ul.social_media_list li a:hover svg {
+    fill: #7e90fe;
 }

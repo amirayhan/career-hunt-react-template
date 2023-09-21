@@ -1,25 +1,10 @@
 import React, { useState } from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
-    // const [fix, setfix] = useState(false);
-
-    // const setFixed = () => {
-    //     if (window.scrollY >= 140) {
-    //         setfix(true);
-    //     } else {
-    //         setfix(false);
-    //     }
-    // };
-
-    // window.addEventListener("scroll", setFixed);
-
     const [toggle, setToggle] = useState(false);
     const [fix, setfix] = useState(false);
 
@@ -35,110 +20,82 @@ const Header = () => {
 
     const handleToggleClick = () => setToggle(!toggle);
 
+    const handleMenuItemClick = () => {
+        setToggle(false);
+    };
+
     return (
         <>
             <div className={fix ? "header fixed" : "header"}>
                 <div className="container d-flex justify-content-between align-items-center py-3">
                     <div className="logo">
                         <a href="/">
-                            <h3>CareerHunt</h3>
+                            <h3>
+                                Career<span>Hunt</span>
+                            </h3>
                         </a>
                     </div>
-                    <div className="d-none d-md-flex align-items-center gap-5">
+                    <div className="d-none d-lg-flex align-items-center gap-5">
                         <ul className="d-md-flex gap-5">
                             <li>
-                                <Link to="/" className="nav-link">
+                                <NavLink onClick={handleMenuItemClick} to="/" className="nav-link">
                                     Home
-                                </Link>
+                                </NavLink>
                             </li>
                             <li>
-                                <Link to="/statistics" className="nav-link">
+                                <NavLink onClick={handleMenuItemClick} to="/statistics" className="nav-link">
                                     Statistics
-                                </Link>
+                                </NavLink>
                             </li>
                             <li>
-                                <Link to="/appliedjobs" className="nav-link">
+                                <NavLink onClick={handleMenuItemClick} to="/appliedjobs" className="nav-link">
                                     Applied Jobs
-                                </Link>
+                                </NavLink>
                             </li>
                             <li>
-                                <Link to="/blog" className="nav-link">
+                                <NavLink onClick={handleMenuItemClick} to="/blog" className="nav-link">
                                     Blog
-                                </Link>
+                                </NavLink>
                             </li>
                         </ul>
                         <a href="#featured_jobs" className="button1">
                             Start Applying
                         </a>
                     </div>
-                    <button onClick={handleToggleClick} className="d-md-none">
+                    <button onClick={handleToggleClick} className="d-lg-none toggle_icon">
                         <FontAwesomeIcon icon={toggle ? faXmark : faBars} />
                     </button>
                 </div>
                 <div className={`${toggle ? "position-absolute" : "d-none"} w-100 m-auto toggle-navbar`}>
                     <ul className="text-center">
-                        <li className="mb-3">
-                            <Link to="/" className="nav-link">
+                        <li>
+                            <NavLink onClick={handleMenuItemClick} to="/" className="nav-link">
                                 Home
-                            </Link>
+                            </NavLink>
                         </li>
-                        <li className="mb-3">
-                            <Link to="/statistics" className="nav-link">
+                        <li>
+                            <NavLink onClick={handleMenuItemClick} to="/statistics" className="nav-link">
                                 Statistics
-                            </Link>
+                            </NavLink>
                         </li>
-                        <li className="mb-3">
-                            <Link to="/appliedjobs" className="nav-link">
+                        <li>
+                            <NavLink onClick={handleMenuItemClick} to="/appliedjobs" className="nav-link">
                                 Applied Jobs
-                            </Link>
+                            </NavLink>
                         </li>
-                        <li className="mb-3">
-                            <Link to="/blog" className="nav-link">
+                        <li>
+                            <NavLink onClick={handleMenuItemClick} to="/blog" className="nav-link">
                                 Blog
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
                     <div className="d-flex justify-content-center">
-                        <a href="#featured_jobs" className="button1 m-auto">
+                        <a onClick={handleMenuItemClick} href="#featured_jobs" className="button1 m-auto">
                             Start Applying
                         </a>
                     </div>
                 </div>
             </div>
-
-            {/* <div className={`${fix ? "navbar fixed" : "navbar"} navbar-light`} expand="lg">
-                <Container>
-                    <Navbar.Brand href="#home">CareerHunt</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="m-auto">
-                            <li className="nav-item">
-                                <Link to="/" className="nav-link">
-                                    Home
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/statistics" className="nav-link">
-                                    Statistics
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/appliedjobs" className="nav-link">
-                                    Applied Jobs
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/blog" className="nav-link">
-                                    Blog
-                                </Link>
-                            </li>
-                        </Nav>
-                        <a href="#featured_jobs" className="button1">
-                            Start Applying
-                        </a>
-                    </Navbar.Collapse>
-                </Container>
-            </div> */}
         </>
     );
 };
