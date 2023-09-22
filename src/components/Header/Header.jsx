@@ -1,7 +1,7 @@
-import React, { useState } from "react";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link, NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -43,11 +43,6 @@ const Header = () => {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink onClick={handleMenuItemClick} to="/statistics" className="nav-link">
-                                    Statistics
-                                </NavLink>
-                            </li>
-                            <li>
                                 <NavLink onClick={handleMenuItemClick} to="/appliedjobs" className="nav-link">
                                     Applied Jobs
                                 </NavLink>
@@ -71,11 +66,6 @@ const Header = () => {
                         <li>
                             <NavLink onClick={handleMenuItemClick} to="/" className="nav-link">
                                 Home
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink onClick={handleMenuItemClick} to="/statistics" className="nav-link">
-                                Statistics
                             </NavLink>
                         </li>
                         <li>

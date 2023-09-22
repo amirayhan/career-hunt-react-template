@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
@@ -123,8 +122,14 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer_bottom d-flex justify-content-between mt-5 pt-3">
-                    <p>@2023 CareerHub. All Rights Reserved</p>
-                    <p>Powered by CareerHub</p>
+                    <p>
+                        @2023{" "}
+                        <a href="https://github.com/amirayhan" target="_blank">
+                            amiRayhan
+                        </a>
+                        . All Rights Reserved
+                    </p>
+                    <p>Powered by CareerHunt</p>
                 </div>
             </div>
         </div>

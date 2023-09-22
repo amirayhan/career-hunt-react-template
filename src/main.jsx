@@ -9,7 +9,6 @@ import JobDetails from "./components/JobDetails/JobDetails";
 import Main from "./components/Layout/Main";
 import PostDetails from "./components/PostDetails/PostDetails";
 import Sidebar from "./components/Sidebar/Sidebar";
-import Statistics from "./components/Statistics/Statistics";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -20,10 +19,6 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-            },
-            {
-                path: "statistics",
-                element: <Statistics></Statistics>,
             },
             {
                 path: "appliedjobs",

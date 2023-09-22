@@ -103,6 +103,15 @@ img {
     padding-bottom: 150px;
     background: url(./assets/job_details_banner.jpg) no-repeat center/cover;
 }
+.main span.preloader {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
 @media (max-width: 576px) {
     h2 {
         font-size: 30px;
